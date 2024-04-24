@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --font-primaria: "Poppins", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    background: none;
+    border: none;
+}
+
+body {
+    display: flex;
+}
+
+.login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 24px;
+}
+
+.login__titulo {
+    font-family: var(--font-primaria);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.login__subtitulo {
+    color: #525252;
+    font-family: var(--font-primaria);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.login__campos {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+
+    align-items: center;
+}
+
+.login_campos__user {
+    width: 364px;
+    display: flex;
+    align-items: center;
+    background-color: #F0EDFF;
+    border-radius: 16px;
+    gap: 6px;
+    padding: 14px 18px;
+}
+
+.login_campos_input {
+    font-size: 12px;
+}
+
+.login_campos_input:focus {
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.login_campos_input::placeholder {
+    color: #000;
+}
+
+.login__campos__submit {
+    background: rgb(145,129,244);
+    background: linear-gradient(90deg, rgba(145,129,244,1) 0%, rgba(80,56,237,1) 100%);
+    width: 182px;
+    height: 52px;
+    border-radius: 16px;
+
+    font-family: var(--font-primaria);
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.login__outrosLogin {
+    font-family: var(--font-primaria);
+    font-size: 16px;
+    font-weight: bold;
+    color: #1C1C1C;
+    background-color: #fff;
+    padding: 0 3px;
+}
+
+.login__outrosLogin::before {
+    content: " ";
+    width: 364px;
+    height: 1px;
+    background: #F0EDFF;
+    position: absolute;
+    transform: translateX(-172px) translateY(7px);
+    z-index: -1;
+}
+.login__outherRedes {
+    border: 1px solid #F0EDFF;
+    border-radius: 16px;
+    width: 364px;
+    padding: 11px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    text-decoration: none;
+    color: #1C1C1C;
+
+    font-family: var(--font-primaria);
+}
+
+.login__outherRedes > strong {
+    font-weight: bold;
+}
+
+.imagem {
+    width: 50vw;
+    background-image: url(../assets/background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagem__background {
+   width: 412px;
+   height: 524px;
+   background-color: rgba(255, 255, 255, 0.4);
+   border: 1px solid #fff;
+   border-radius: 46px;
+   padding: 26px;
+}
+
+.imagem__background::before{
+    content: url(../assets/pessoa.png);
+    position: absolute;
+    transform: translateX(82px) translateY(-28px);
+
+}
+
+.imagem__background__subtitulo {
+    font-family: var(--font-primaria);
+    width: 184px;
+    font-weight: bold;
+    font-size: 32px;
+    color: #fff;
+}
